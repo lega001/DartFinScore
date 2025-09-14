@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Financial Scores (companies_MyStockList - 2024 Q2)</title><style>:root{--bg:#0b1020;--panel:#121a2e;--panel2:#0e1530;--text:#e9eef7;--muted:#a6b0c3;--acc:#5b8cff;--acc2:#26d3a6;--warn:#ffa726;--a:#1ec971;--b:#7fd47c;--c:#ffd166;--d:#ff8a65;--na:#b0bec5;}*{box-sizing:border-box;}body{background:linear-gradient(180deg,var(--bg),#070b18 60%);color:var(--text);font-family:-apple-system,Segoe UI,Roboto,Arial,'Noto Sans KR',sans-serif;margin:0;padding:24px;}.container{max-width:1200px;margin:0 auto;}.header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;}.header h1{font-size:20px;margin:0;letter-spacing:.3px;background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent;}.header .meta{color:var(--muted);font-size:12px;}.panel{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px;box-shadow:0 6px 18px rgba(0,0,0,.25);}table{width:100%;border-collapse:collapse;font-size:13px;}thead th{position:sticky;top:0;background:linear-gradient(180deg,rgba(91,140,255,.25),rgba(91,140,255,.08));color:#fff;text-align:center;padding:10px 8px;border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(6px);}tbody td{padding:9px 8px;text-align:center;color:var(--text);border-bottom:1px dashed rgba(255,255,255,.06);}tbody tr:hover{background:rgba(255,255,255,.03);}td.name{text-align:left;}.badge{display:inline-block;min-width:44px;padding:2px 8px;border-radius:999px;font-weight:600;}.score-a{background:var(--a);color:#082813;}.score-b{background:var(--b);color:#0c2910;}.score-c{background:var(--c);color:#5c4200;}.score-d{background:var(--d);color:#2b0d07;}.score-na{background:var(--na);color:#0c1c24;}a{color:var(--acc2);text-decoration:none;}a:hover{text-decoration:underline;}.footer{color:var(--muted);font-size:12px;margin-top:10px;}.weights-panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:16px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.25);}.presets-panel button{margin-right:8px;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,.18);background:rgba(255,255,255,.06);color:#e9eef7;cursor:pointer;}.weight-control{display:flex;flex-direction:column;}.weight-control label{display:flex;justify-content:space-between;margin-bottom:8px;font-size:14px;font-weight:600;color:var(--muted);}.weight-control .value{color:var(--acc2);font-weight:700;}input[type="range"]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:var(--panel2);border-radius:5px;outline:none;transition:opacity .2s;cursor:pointer;}input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;background:var(--acc);cursor:pointer;border-radius:50%;border:2px solid var(--bg);}input[type="range"]::-moz-range-thumb{width:16px;height:16px;background:var(--acc);cursor:pointer;border-radius:50%;border:2px solid var(--bg);}</style></head><body><div class="container"><div class="header"><h1>Financial Scores (companies_MyStockList - 2024 Q2)</h1><div class="meta">Generated: 2025-08-28 22:39</div></div><div class="presets-panel panel" style="margin-bottom:12px;padding:12px;"><button id="preset-growth" title="성장률 중심 (G60 P25 S10 A5)">성장형</button><button id="preset-profit" title="수익성 중심 (G15 P50 S30 A5)">수익형</button><button id="preset-stable" title="안정성 중심 (G10 P30 S50 A10)">안정형</button><button id="preset-momentum" title="모멘텀 중심 (G30 P15 S5 A50)">모멘텀형</button></div><div class="weights-panel"><div class="weight-control"><label for="growth-weight">Growth <span class="value" id="growth-value">25</span></label><input type="range" id="growth-weight" min="0" max="100" value="25"></div><div class="weight-control"><label for="profit-weight">Profitability <span class="value" id="profit-value">25</span></label><input type="range" id="profit-weight" min="0" max="100" value="25"></div><div class="weight-control"><label for="stability-weight">Stability <span class="value" id="stability-value">25</span></label><input type="range" id="stability-weight" min="0" max="100" value="25"></div><div class="weight-control"><label for="activity-weight">Activity <span class="value" id="activity-value">25</span></label><input type="range" id="activity-weight" min="0" max="100" value="25"></div></div><div class="panel"><table>
+<thead><tr><th>Rank</th><th>Symbol</th><th>Name</th><th>Links</th><th>Total</th><th>Growth</th><th>Profitability</th><th>Stability</th><th>Activity</th></tr></thead>
+<tbody><tr>
+            <td>1</td>
+            <td><a href="../Dart_Report/078590/report_078590.html" target="_blank">078590</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=078590" target="_blank">휴림에이텍</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/078590/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-a">88.05</span></td>
+            <td><span class="badge score-a">85.70</span></td>
+            <td><span class="badge score-b">75.30</span></td>
+            <td><span class="badge score-a">97.10</span></td>
+            <td><span class="badge score-a">94.10</span></td>
+        </tr>
+<tr>
+            <td>2</td>
+            <td><a href="../Dart_Report/267980/report_267980.html" target="_blank">267980</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=267980" target="_blank">매일유업</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/267980/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-a">87.03</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-c">68.30</span></td>
+            <td><span class="badge score-a">92.80</span></td>
+            <td><span class="badge score-na"></span></td>
+        </tr>
+<tr>
+            <td>3</td>
+            <td><a href="../Dart_Report/339950/report_339950.html" target="_blank">339950</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=339950" target="_blank">아이비김영</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/339950/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-a">85.95</span></td>
+            <td><span class="badge score-a">93.50</span></td>
+            <td><span class="badge score-b">81.50</span></td>
+            <td><span class="badge score-b">75.60</span></td>
+            <td><span class="badge score-a">93.20</span></td>
+        </tr>
+<tr>
+            <td>4</td>
+            <td><a href="../Dart_Report/031330/report_031330.html" target="_blank">031330</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=031330" target="_blank">에스에이엠티</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/031330/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-a">85.83</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-b">76.60</span></td>
+            <td><span class="badge score-b">80.90</span></td>
+            <td><span class="badge score-na"></span></td>
+        </tr>
+<tr>
+            <td>5</td>
+            <td><a href="../Dart_Report/259960/report_259960.html" target="_blank">259960</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=259960" target="_blank">크래프톤</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/259960/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-a">85.83</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-a">94.20</span></td>
+            <td><span class="badge score-a">95.50</span></td>
+            <td><span class="badge score-c">53.60</span></td>
+        </tr>
+<tr>
+            <td>6</td>
+            <td><a href="../Dart_Report/340570/report_340570.html" target="_blank">340570</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=340570" target="_blank">티앤엘</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/340570/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">84.95</span></td>
+            <td><span class="badge score-a">94.00</span></td>
+            <td><span class="badge score-a">91.80</span></td>
+            <td><span class="badge score-a">87.10</span></td>
+            <td><span class="badge score-c">66.90</span></td>
+        </tr>
+<tr>
+            <td>7</td>
+            <td><a href="../Dart_Report/110990/report_110990.html" target="_blank">110990</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=110990" target="_blank">디아이티</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/110990/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">84.20</span></td>
+            <td><span class="badge score-b">83.30</span></td>
+            <td><span class="badge score-b">84.70</span></td>
+            <td><span class="badge score-a">98.80</span></td>
+            <td><span class="badge score-b">70.00</span></td>
+        </tr>
+<tr>
+            <td>8</td>
+            <td><a href="../Dart_Report/214150/report_214150.html" target="_blank">214150</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=214150" target="_blank">클래시스</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/214150/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">84.10</span></td>
+            <td><span class="badge score-a">87.40</span></td>
+            <td><span class="badge score-a">99.10</span></td>
+            <td><span class="badge score-a">97.50</span></td>
+            <td><span class="badge score-c">52.40</span></td>
+        </tr>
+<tr>
+            <td>9</td>
+            <td><a href="../Dart_Report/265560/report_265560.html" target="_blank">265560</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=265560" target="_blank">영화테크</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/265560/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">83.05</span></td>
+            <td><span class="badge score-a">99.00</span></td>
+            <td><span class="badge score-b">74.50</span></td>
+            <td><span class="badge score-a">94.50</span></td>
+            <td><span class="badge score-c">64.20</span></td>
+        </tr>
+<tr>
+            <td>10</td>
+            <td><a href="../Dart_Report/035420/report_035420.html" target="_blank">035420</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=035420" target="_blank">NAVER</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/035420/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">82.45</span></td>
+            <td><span class="badge score-a">94.20</span></td>
+            <td><span class="badge score-b">77.30</span></td>
+            <td><span class="badge score-b">82.50</span></td>
+            <td><span class="badge score-b">75.80</span></td>
+        </tr>
+<tr>
+            <td>11</td>
+            <td><a href="../Dart_Report/011070/report_011070.html" target="_blank">011070</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=011070" target="_blank">LG이노텍</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/011070/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">82.17</span></td>
+            <td><span class="badge score-a">91.30</span></td>
+            <td><span class="badge score-b">76.60</span></td>
+            <td><span class="badge score-b">78.60</span></td>
+            <td><span class="badge score-na"></span></td>
+        </tr>
+<tr>
+            <td>12</td>
+            <td><a href="../Dart_Report/113810/report_113810.html" target="_blank">113810</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=113810" target="_blank">디젠스</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/113810/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">80.35</span></td>
+            <td><span class="badge score-a">95.20</span></td>
+            <td><span class="badge score-b">70.70</span></td>
+            <td><span class="badge score-b">75.70</span></td>
+            <td><span class="badge score-b">79.80</span></td>
+        </tr>
+<tr>
+            <td>13</td>
+            <td><a href="../Dart_Report/257720/report_257720.html" target="_blank">257720</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=257720" target="_blank">실리콘투</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/257720/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">80.20</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-b">78.50</span></td>
+            <td><span class="badge score-b">77.90</span></td>
+            <td><span class="badge score-c">64.40</span></td>
+        </tr>
+<tr>
+            <td>14</td>
+            <td><a href="../Dart_Report/368770/report_368770.html" target="_blank">368770</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=368770" target="_blank">파이버프로</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/368770/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">80.00</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-b">76.30</span></td>
+            <td><span class="badge score-a">98.80</span></td>
+            <td><span class="badge score-d">44.90</span></td>
+        </tr>
+<tr>
+            <td>15</td>
+            <td><a href="../Dart_Report/088260/report_088260.html" target="_blank">088260</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=088260" target="_blank">이리츠코크렙</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/088260/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">79.07</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-a">86.70</span></td>
+            <td><span class="badge score-b">75.50</span></td>
+            <td><span class="badge score-b">75.00</span></td>
+        </tr>
+<tr>
+            <td>16</td>
+            <td><a href="../Dart_Report/126720/report_126720.html" target="_blank">126720</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=126720" target="_blank">수산인더스트리</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/126720/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">77.62</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+            <td><span class="badge score-b">79.80</span></td>
+            <td><span class="badge score-a">98.80</span></td>
+            <td><span class="badge score-b">81.90</span></td>
+        </tr>
+<tr>
+            <td>17</td>
+            <td><a href="../Dart_Report/041190/report_041190.html" target="_blank">041190</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=041190" target="_blank">우리기술투자</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/041190/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">76.77</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-a">87.50</span></td>
+            <td><span class="badge score-a">92.80</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+        </tr>
+<tr>
+            <td>18</td>
+            <td><a href="../Dart_Report/309960/report_309960.html" target="_blank">309960</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=309960" target="_blank">LB인베스트먼트</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/309960/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">76.27</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-b">76.50</span></td>
+            <td><span class="badge score-b">83.30</span></td>
+            <td><span class="badge score-c">69.00</span></td>
+        </tr>
+<tr>
+            <td>19</td>
+            <td><a href="../Dart_Report/059210/report_059210.html" target="_blank">059210</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=059210" target="_blank">메타바이오메드</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/059210/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">75.80</span></td>
+            <td><span class="badge score-a">97.00</span></td>
+            <td><span class="badge score-b">77.70</span></td>
+            <td><span class="badge score-c">68.50</span></td>
+            <td><span class="badge score-c">60.00</span></td>
+        </tr>
+<tr>
+            <td>20</td>
+            <td><a href="../Dart_Report/065710/report_065710.html" target="_blank">065710</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=065710" target="_blank">서호전기</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/065710/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">75.35</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+            <td><span class="badge score-b">84.90</span></td>
+            <td><span class="badge score-a">95.30</span></td>
+            <td><span class="badge score-b">71.20</span></td>
+        </tr>
+<tr>
+            <td>21</td>
+            <td><a href="../Dart_Report/078350/report_078350.html" target="_blank">078350</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=078350" target="_blank">한양디지텍</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/078350/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">74.88</span></td>
+            <td><span class="badge score-c">65.00</span></td>
+            <td><span class="badge score-c">62.50</span></td>
+            <td><span class="badge score-b">79.80</span></td>
+            <td><span class="badge score-a">92.20</span></td>
+        </tr>
+<tr>
+            <td>22</td>
+            <td><a href="../Dart_Report/264660/report_264660.html" target="_blank">264660</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=264660" target="_blank">씨앤지하이테크</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/264660/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">74.80</span></td>
+            <td><span class="badge score-c">54.50</span></td>
+            <td><span class="badge score-c">69.40</span></td>
+            <td><span class="badge score-a">92.60</span></td>
+            <td><span class="badge score-b">82.70</span></td>
+        </tr>
+<tr>
+            <td>23</td>
+            <td><a href="../Dart_Report/215000/report_215000.html" target="_blank">215000</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=215000" target="_blank">골프존</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/215000/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">73.42</span></td>
+            <td><span class="badge score-c">51.80</span></td>
+            <td><span class="badge score-b">70.20</span></td>
+            <td><span class="badge score-a">96.10</span></td>
+            <td><span class="badge score-b">75.60</span></td>
+        </tr>
+<tr>
+            <td>24</td>
+            <td><a href="../Dart_Report/277880/report_277880.html" target="_blank">277880</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=277880" target="_blank">티에스아이</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/277880/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">72.50</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-c">63.70</span></td>
+            <td><span class="badge score-c">64.90</span></td>
+            <td><span class="badge score-c">61.40</span></td>
+        </tr>
+<tr>
+            <td>25</td>
+            <td><a href="../Dart_Report/005090/report_005090.html" target="_blank">005090</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=005090" target="_blank">SGC에너지</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/005090/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">71.95</span></td>
+            <td><span class="badge score-b">83.30</span></td>
+            <td><span class="badge score-c">62.60</span></td>
+            <td><span class="badge score-c">61.60</span></td>
+            <td><span class="badge score-b">80.30</span></td>
+        </tr>
+<tr>
+            <td>26</td>
+            <td><a href="../Dart_Report/017800/report_017800.html" target="_blank">017800</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=017800" target="_blank">현대엘리베이터</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/017800/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">71.32</span></td>
+            <td><span class="badge score-b">80.50</span></td>
+            <td><span class="badge score-c">51.60</span></td>
+            <td><span class="badge score-c">68.80</span></td>
+            <td><span class="badge score-b">84.40</span></td>
+        </tr>
+<tr>
+            <td>27</td>
+            <td><a href="../Dart_Report/086710/report_086710.html" target="_blank">086710</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=086710" target="_blank">선진뷰티사이언스</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/086710/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">70.92</span></td>
+            <td><span class="badge score-b">72.10</span></td>
+            <td><span class="badge score-c">66.60</span></td>
+            <td><span class="badge score-a">87.30</span></td>
+            <td><span class="badge score-c">57.70</span></td>
+        </tr>
+<tr>
+            <td>28</td>
+            <td><a href="../Dart_Report/195870/report_195870.html" target="_blank">195870</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=195870" target="_blank">해성디에스</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/195870/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-b">70.92</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+            <td><span class="badge score-c">69.50</span></td>
+            <td><span class="badge score-a">98.00</span></td>
+            <td><span class="badge score-c">66.20</span></td>
+        </tr>
+<tr>
+            <td>29</td>
+            <td><a href="../Dart_Report/017670/report_017670.html" target="_blank">017670</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=017670" target="_blank">SK텔레콤</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/017670/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">69.10</span></td>
+            <td><span class="badge score-b">73.60</span></td>
+            <td><span class="badge score-c">68.80</span></td>
+            <td><span class="badge score-c">64.90</span></td>
+            <td><span class="badge score-na"></span></td>
+        </tr>
+<tr>
+            <td>30</td>
+            <td><a href="../Dart_Report/000660/report_000660.html" target="_blank">000660</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=000660" target="_blank">SK하이닉스</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/000660/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">68.88</span></td>
+            <td><span class="badge score-a">100.00</span></td>
+            <td><span class="badge score-c">67.90</span></td>
+            <td><span class="badge score-c">59.30</span></td>
+            <td><span class="badge score-d">48.30</span></td>
+        </tr>
+<tr>
+            <td>31</td>
+            <td><a href="../Dart_Report/080470/report_080470.html" target="_blank">080470</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=080470" target="_blank">성창오토텍</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/080470/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">68.35</span></td>
+            <td><span class="badge score-c">67.60</span></td>
+            <td><span class="badge score-c">55.00</span></td>
+            <td><span class="badge score-c">68.00</span></td>
+            <td><span class="badge score-b">82.80</span></td>
+        </tr>
+<tr>
+            <td>32</td>
+            <td><a href="../Dart_Report/054930/report_054930.html" target="_blank">054930</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=054930" target="_blank">유신</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/054930/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">67.85</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+            <td><span class="badge score-c">52.30</span></td>
+            <td><span class="badge score-b">80.60</span></td>
+            <td><span class="badge score-a">88.50</span></td>
+        </tr>
+<tr>
+            <td>33</td>
+            <td><a href="../Dart_Report/263810/report_263810.html" target="_blank">263810</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=263810" target="_blank">상신전자</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/263810/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">67.00</span></td>
+            <td><span class="badge score-b">71.50</span></td>
+            <td><span class="badge score-c">50.30</span></td>
+            <td><span class="badge score-b">78.90</span></td>
+            <td><span class="badge score-c">67.30</span></td>
+        </tr>
+<tr>
+            <td>34</td>
+            <td><a href="../Dart_Report/372910/report_372910.html" target="_blank">372910</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=372910" target="_blank">한컴라이프케어</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/372910/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">67.00</span></td>
+            <td><span class="badge score-b">76.30</span></td>
+            <td><span class="badge score-c">54.60</span></td>
+            <td><span class="badge score-a">85.90</span></td>
+            <td><span class="badge score-c">51.20</span></td>
+        </tr>
+<tr>
+            <td>35</td>
+            <td><a href="../Dart_Report/402340/report_402340.html" target="_blank">402340</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=402340" target="_blank">SK스퀘어</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/402340/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">65.65</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-d">40.00</span></td>
+            <td><span class="badge score-a">91.30</span></td>
+            <td><span class="badge score-na"></span></td>
+        </tr>
+<tr>
+            <td>36</td>
+            <td><a href="../Dart_Report/000650/report_000650.html" target="_blank">000650</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=000650" target="_blank">천일고속</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/000650/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">64.72</span></td>
+            <td><span class="badge score-c">54.70</span></td>
+            <td><span class="badge score-d">42.50</span></td>
+            <td><span class="badge score-c">69.00</span></td>
+            <td><span class="badge score-a">92.70</span></td>
+        </tr>
+<tr>
+            <td>37</td>
+            <td><a href="../Dart_Report/012860/report_012860.html" target="_blank">012860</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=012860" target="_blank">모베이스전자</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/012860/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">62.75</span></td>
+            <td><span class="badge score-c">62.10</span></td>
+            <td><span class="badge score-c">52.10</span></td>
+            <td><span class="badge score-c">61.70</span></td>
+            <td><span class="badge score-b">75.10</span></td>
+        </tr>
+<tr>
+            <td>38</td>
+            <td><a href="../Dart_Report/074600/report_074600.html" target="_blank">074600</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=074600" target="_blank">원익QnC</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/074600/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">61.90</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+            <td><span class="badge score-c">59.40</span></td>
+            <td><span class="badge score-b">70.90</span></td>
+            <td><span class="badge score-c">67.30</span></td>
+        </tr>
+<tr>
+            <td>39</td>
+            <td><a href="../Dart_Report/011390/report_011390.html" target="_blank">011390</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=011390" target="_blank">부산산업</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/011390/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">60.82</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+            <td><span class="badge score-c">52.20</span></td>
+            <td><span class="badge score-b">78.50</span></td>
+            <td><span class="badge score-c">62.60</span></td>
+        </tr>
+<tr>
+            <td>40</td>
+            <td><a href="../Dart_Report/023810/report_023810.html" target="_blank">023810</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=023810" target="_blank">인팩</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/023810/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">53.30</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-c">53.30</span></td>
+            <td><span class="badge score-na"></span></td>
+        </tr>
+<tr>
+            <td>41</td>
+            <td><a href="../Dart_Report/039490/report_039490.html" target="_blank">039490</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=039490" target="_blank">키움증권</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/039490/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-c">50.50</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-c">64.50</span></td>
+            <td><span class="badge score-d">37.00</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+        </tr>
+<tr>
+            <td>42</td>
+            <td><a href="../Dart_Report/016360/report_016360.html" target="_blank">016360</a></td>
+            <td class="name"><a href="https://finance.naver.com/item/main.naver?code=016360" target="_blank">삼성증권</a></td>
+            <td><a href="https://m.stock.naver.com/domestic/stock/016360/total" target="_blank">Naver Mobile</a></td>
+            <td><span class="badge score-d">49.57</span></td>
+            <td><span class="badge score-na"></span></td>
+            <td><span class="badge score-b">82.00</span></td>
+            <td><span class="badge score-d">16.70</span></td>
+            <td><span class="badge score-c">50.00</span></td>
+        </tr>
+</tbody></table></div><div class="footer">※ 점수는 비교집단에 따라 재조정될 수 있습니다.</div></div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const weights = { growth: document.getElementById('growth-weight'), profitability: document.getElementById('profit-weight'), stability: document.getElementById('stability-weight'), activity: document.getElementById('activity-weight'), };
+    const weightValues = { growth: document.getElementById('growth-value'), profitability: document.getElementById('profit-value'), stability: document.getElementById('stability-value'), activity: document.getElementById('activity-value'), };
+    const tableBody = document.querySelector('tbody');
+    const getScoreColorClass = (score) => {
+        if (isNaN(score) || score === null) return 'score-na';
+        if (score >= 85) return 'score-a'; if (score >= 70) return 'score-b'; if (score >= 50) return 'score-c'; return 'score-d';
+    };
+    const recalc = () => {
+        const currentWeights = { growth: parseFloat(weights.growth.value), profitability: parseFloat(weights.profitability.value), stability: parseFloat(weights.stability.value), activity: parseFloat(weights.activity.value), };
+        Object.keys(weightValues).forEach(k => { weightValues[k].textContent = String(currentWeights[k]); });
+        const totalWeight = Object.values(currentWeights).reduce((s, w) => s + w, 0);
+        const rows = Array.from(tableBody.querySelectorAll('tr'));
+        const scored = [];
+        rows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            if (cells.length < 9) return;
+            const scores = {
+                growth: parseFloat(cells[5].querySelector('.badge').textContent) || 0, profitability: parseFloat(cells[6].querySelector('.badge').textContent) || 0,
+                stability: parseFloat(cells[7].querySelector('.badge').textContent) || 0, activity: parseFloat(cells[8].querySelector('.badge').textContent) || 0,
+            };
+            const newTotal = totalWeight > 0 ? (scores.growth * currentWeights.growth + scores.profitability * currentWeights.profitability + scores.stability * currentWeights.stability + scores.activity * currentWeights.activity) / totalWeight : 0;
+            const totalBadge = cells[4].querySelector('.badge');
+            totalBadge.textContent = newTotal.toFixed(2);
+            totalBadge.className = 'badge ' + getScoreColorClass(newTotal);
+            scored.push({score: newTotal, el: row});
+        });
+        scored.sort((a,b) => b.score - a.score);
+        scored.forEach((item, idx) => {
+            item.el.cells[0].textContent = String(idx + 1); tableBody.appendChild(item.el);
+        });
+    };
+    Object.values(weights).forEach(inp => inp.addEventListener('input', () => {
+        try { localStorage.setItem('finScoreWeights', JSON.stringify(Object.keys(weights).reduce((acc, k) => { acc[k] = parseFloat(weights[k].value); return acc; }, {}))); } catch(e) {}
+        recalc();
+    }));
+    const applyWeights = (w) => {
+        if (!w) return;
+        Object.keys(w).forEach(k => { if(weights[k]) weights[k].value = w[k]; });
+        try { localStorage.setItem('finScoreWeights', JSON.stringify(w)); } catch(e) {}
+        recalc();
+    };
+    document.getElementById('preset-growth').addEventListener('click', () => applyWeights({growth:60, profitability:25, stability:10, activity:5}));
+    document.getElementById('preset-profit').addEventListener('click', () => applyWeights({growth:15, profitability:50, stability:30, activity:5}));
+    document.getElementById('preset-stable').addEventListener('click', () => applyWeights({growth:10, profitability:30, stability:50, activity:10}));
+    document.getElementById('preset-momentum').addEventListener('click', () => applyWeights({growth:30, profitability:15, stability:5, activity:50}));
+    try {
+        const saved = JSON.parse(localStorage.getItem('finScoreWeights') || 'null');
+        if (saved) applyWeights(saved); else recalc();
+    } catch(e) { recalc(); }
+});
+</script></body></html>
